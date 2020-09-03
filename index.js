@@ -29,6 +29,13 @@ app.get('/nuestrahistoria', (req, res) => {
     
 })
 
+
+//Rutas admin
+app.get('/admin', (req, res) => {
+    var title = app.get('appName')+" | admin"
+    res.render('admin.ejs', {title: title} )
+})
+
 //Nuestra Historia
 app.get('/institucional', (req, res) => {
     var title = app.get('appName')+" | Institucional"
